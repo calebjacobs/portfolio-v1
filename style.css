@@ -1,0 +1,139 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #50b3a2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.left-content {
+    /* Styling for the name and credentials section */
+}
+
+.right-content {
+    /* Optional styling for the links section */
+}
+
+.right-content a {
+    margin-left: 10px; /* Add spacing between links */
+    text-decoration: none; /* Optional: to remove the default underline of links */
+    color: inherit; /* Optional: to ensure the link colors match the header text color */
+}
+
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive media queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        float: none;
+        display: inline-block;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+}
+.center-page {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 200px; /* Adjust based on desired size */
+    width: 200px; /* Adjust based on desired size */
+    border-radius: 50%; /* Makes the container round */
+    overflow: hidden; /* Hides the parts of the image outside the circle */
+}
+
+.image-container img {
+    height: 100%; /* Adjusts the image height */
+}
+
+
+.primary-header {
+    text-align: center;
+}
