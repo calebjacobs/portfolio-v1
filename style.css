@@ -6,12 +6,14 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-    background-color: #f4f4f4;
     color: #333;
     font-size: 16px;
     line-height: 1.5;
     padding: 20px;
+    background: #ffffff; /* Add this */
+    margin: 0; /* Reset default margin */
 }
+
 
 .container {
     max-width: 1200px;
@@ -26,6 +28,7 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    /* mix-blend-mode: difference; */
 }
 
 header {
@@ -54,6 +57,14 @@ header h1 {
     font-size: 2.5em;
 }
 
+#work-history {
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
 nav ul {
     list-style-type: none;
     overflow: hidden;
@@ -80,13 +91,6 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
 
 /* Responsive media queries */
 
@@ -137,3 +141,55 @@ footer {
 .primary-header {
     text-align: center;
 }
+
+.logos {
+    display: inline-block;
+    text-align: center;
+    padding: 0%;
+    margin: 10px;
+}
+
+.logos img {
+    padding: 5px;
+}
+
+.button-section {
+    text-align: center;
+
+}
+
+.button-section .button-contact {
+    width: 300px;
+    font-size: large;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.3));
+    margin: 5%;
+    
+
+}
+
+.button-section .button-email {
+    font-size ;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.3));
+
+}
+
+#work-history ul {
+    list-style-position: inside; 
+    padding-left: 20px; /* Adding some padding to ensure the text doesn't overlap with the bullets */
+}
+
+#top-corner {
+    background: #690202;
+    height: 800px;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(45deg);
+    overflow: hidden;
+    top: 50 px;
+    left: 50px;
+    bottom: 500px;
+    right: 50px;
+    
+}
+
