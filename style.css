@@ -42,14 +42,17 @@ header {
     /* Styling for the name and credentials section */
 }
 
-.right-content {
-    /* Optional styling for the links section */
+.right-content a {
+    color: #fff; /* Default color when not hovered */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
-.right-content a {
-    margin-left: 10px; /* Add spacing between links */
-    text-decoration: none; /* Optional: to remove the default underline of links */
-    color: inherit; /* Optional: to ensure the link colors match the header text color */
+.right-content a:hover {
+    color: #50b3a2; /* Change text color on hover */
+    background-color: #881f1f; /* Change background color on hover */
 }
 
 
@@ -143,7 +146,7 @@ nav ul li a:hover {
 }
 
 .logos {
-    display: inline-block;
+    display: block;
     text-align: center;
     padding: 0%;
     margin: 10px;
@@ -151,6 +154,7 @@ nav ul li a:hover {
 
 .logos img {
     padding: 5px;
+    display: inline-block;
 }
 
 .button-section {
@@ -191,5 +195,41 @@ nav ul li a:hover {
     bottom: 500px;
     right: 50px;
     
+}
+
+.form-group label, 
+.form-group input, 
+.form-group textarea {
+    font-size: 18px; /* Adjust to your preferred size */
+}
+
+/* Increase size of the text input and email input */
+.form-group input[type="text"], 
+.form-group input[type="email"] {
+    width: 100%; /* Makes the input take the full width of its container */
+    padding: 10px; /* Adds some space inside the input */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+}
+
+/* Increase size of the textarea */
+.form-group textarea {
+    width: 100%; /* Makes the textarea take the full width of its container */
+    padding: 10px; /* Adds some space inside the textarea */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+}
+
+/* Style the submit button */
+.form-group button {
+    padding: 10px 15px; /* Increase button size by adding padding */
+    font-size: 18px; /* Increase font size of the button text */
+    cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+}
+
+.form-group button:hover {
+    color: #fff; /* Default color when not hovered */
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    background-color: #690202;
 }
 

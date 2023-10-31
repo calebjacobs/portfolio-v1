@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Call!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="submission-success.html" target="_self" onsubmit="return confirm('Are you sure you want to submit?');"> <!-- note to replace with server-side script or action URL -->
+    
+        <!-- Name Field -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+        <!-- Email Field -->
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+    
+        <!-- Message Field -->
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+    
+        <!-- Submit Button -->
+
+                <button type="submit">Submit</button>
+        </div>
+        
+    
+    </form>
+    
+</body>
+</html>
