@@ -10,8 +10,19 @@ body {
     font-size: 16px;
     line-height: 1.5;
     padding: 20px;
-    background: #f1c9c9; /* Add this */
-    margin: 0; /* Reset default margin */
+    background: #0099cc; /* Blue color for the outside */
+    margin: 0; /* Resetting margin */
+}
+
+#center-margin {
+    background-color: white; /* White background for the content area */
+    border: 2px solid black; /* Black border */
+    margin: 5%; /* This creates a space (margin) between the content and the viewport edge. */
+    padding: 20px; /* Padding for your content */
+    /* Optionally, if you want to limit the width: */
+    max-width: 1200px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
@@ -24,8 +35,8 @@ body {
 }
 
 header {
-    background-color: #50b3a2;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     padding: 20px 0;
     text-align: center;
     /* mix-blend-mode: difference; */
@@ -43,7 +54,7 @@ header {
 }
 
 .right-content a {
-    color: #fff; /* Default color when not hovered */
+    color: #000000; /* Default color when not hovered */
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none; /* Remove underline */
@@ -62,7 +73,6 @@ header h1 {
 
 #work-history {
     position: relative;
-    text-align: center;
     width: auto;
     height: auto;
     z-index: 1;
@@ -182,20 +192,6 @@ nav ul li a:hover {
     padding-left: 20px; /* Adding some padding to ensure the text doesn't overlap with the bullets */
 }
 
-#top-corner {
-    background: #690202;
-    height: 800px;
-    width: 200px;
-    position: absolute;
-    z-index: -1;
-    transform: rotate(45deg);
-    overflow: hidden;
-    top: 50 px;
-    left: 50px;
-    bottom: 500px;
-    right: 50px;
-    
-}
 
 .form-group label, 
 .form-group input, 
